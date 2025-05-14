@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Minha Namorada 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffccff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      flex-direction: column;
+      text-align: center;
+    }
+    h1 {
+      color: #ff69b4;
+      font-size: 3rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    p {
+      font-size: 1.5rem;
+      color: #ff1493;
+      margin-top: 20px;
+      opacity: 0;
+      animation: fadeIn 3s ease-in-out 1s forwards;
+    }
+    .heart {
+      color: red;
+      font-size: 2rem;
+      margin-top: 20px;
+      animation: heartBeat 1.5s infinite;
+    }
+    button {
+      background-color: #ff69b4;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #ff1493;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes heartBeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Oii, minha princesa 💖</h1>
+  <p>Eu só queria te lembrar o quanto vc é especial para mim.</p>
+  <div class="heart">❤️</div>
+  <button onclick="showMessage()">Clique aqui para uma surpresa! 🎁</button>
+
+  <script>
+    function showMessage() {
+      const message = document.createElement('p');
+      message.textContent = 'Eu te amo mais do que palavras podem expressar! e cada dia q passa me apaixono mais e te amo mt mais e só qro vc amor da mvd, e meu sonho é ter familia com vc e ter futuro com vc amor 💖✨';
+      document.body.appendChild(message);
+
+      // Animando a nova mensagem
+      message.style.animation = 'fadeIn 3s ease-in-out 0.5s forwards';
+    }
+  </script>
+</body>
+</html>
